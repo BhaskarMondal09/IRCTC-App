@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_constraintCircleRadius="15dp"
+    tools:context=".MainActivity"
+    android:background="#CCC7D2">
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:maxWidth="50dp"
+                android:src="@drawable/logo"
+                android:paddingRight="5dp"
+                ></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Train :"
+                android:id="@+id/lblTrainNo"
+                android:textColor="#000075"
+                android:textSize="12sp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Train No"
+                android:id="@+id/txtTrainNo"
+                android:textColor="#000075"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/txtTID"
+                android:gravity="right"
+                android:textColor="#000075"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:textSize="14sp" android:paddingRight="10dp"/>
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:textSize="10sp"
+                android:paddingLeft="10dp"
+                android:id="@+id/lblDate" ></TextView>
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:id="@+id/txtDate"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:textSize="12sp" android:paddingRight="10dp"/>-->
+
+
+
+           <!-- <Button
+
+                android:id="@+id/BtnCheck"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+
+                android:text="Verify" />
+-->
+            <ToggleButton
+                android:id="@+id/BtnCheck"
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+
+                android:textOn="       Verified"
+                android:textOff=""
+                android:background="@drawable/check_selector"
+                android:text="Check" />
+            <ToggleButton
+                android:id="@+id/BtnAllocateSeat"
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:textOn="       Allocated"
+                android:textOff=""
+                android:background="@drawable/allocate_seat"
+                android:text="Allocate" />
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblPNR"
+                android:textSize="12sp"
+                android:text="PNR:"></TextView>
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPNR"
+                android:textStyle="bold"
+                android:textSize="15sp" >
+            </TextView>
+          <!--  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblFrom"
+                android:paddingLeft="10dp"
+                android:textSize="12sp"
+                android:text="Journey:"></TextView>-->
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFrom"
+
+                android:textSize="12sp" >
+            </TextView>
+
+            <ImageView
+                android:paddingLeft="3dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                ></ImageView>
+<!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblTo"
+                android:paddingLeft="5dp"
+                android:textSize="12sp"
+                android:text="To:"></TextView>
+-->
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTo"
+
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblAge"
+                android:text="Age :" android:paddingLeft="10dp"
+                android:textSize="12sp">
+
+            </TextView>
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/txtAge" android:textSize="14sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Name:"
+                android:id="@+id/lblName">
+
+            </TextView>
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/txtName"
+                android:textSize="14sp"
+
+                >
+            </TextView>
+
+         <!--   <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Quota:"
+                android:id="@+id/lblQuota">
+
+            </TextView>
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quota"
+                android:id="@+id/txtQuota"
+                android:textSize="14sp"
+                >
+            </TextView>
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Class:"
+                android:id="@+id/lblCoach_Class">
+
+            </TextView>
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class"
+                android:id="@+id/txtCoach_Class"
+                android:textSize="14sp"
+
+                >
+            </TextView>-->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_airline_seat_recline_normal_black_24dp"
+                android:id="@+id/lblBookingStatus"
+                android:textColor="#000075">
+
+            </TextView>
+
+            <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBookingStatus"
+                android:textSize="14sp"
+                android:textColor="#000075"
+                >
+            </TextView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/txtQuota"
+                android:textSize="14sp"
+                android:textColor="#000075"
+                >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>
